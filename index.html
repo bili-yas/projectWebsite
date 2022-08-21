@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>My Blog</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" >
+		<script type="text/javascript">
+			var image0=new Image()
+			image0.src="images/img0.jpg"
+			var image1=new Image()
+			image1.src="images/img1.jpg"
+			var image2=new Image()
+			image2.src="images/img2.jpg"
+			var image3=new Image()
+			image3.src="images/img3.jpg"
+			var image4 = new Image()
+			image4.src = "images/liverpool3.jfif"
+		</script>
+	</head>
+	
+	<body class="background">
+		<div class="mainContent margin" >
+			<!-- Header -->
+			<div>
+				<p class="header">My Blog</p>
+			</div>
+			<!-- Navigatioin Menu -->
+			<div class="menu">
+				<ul>
+					<li>
+						<a style="background-color:#000000;cursor:auto"> Home </a>
+					</li>
+					<li>
+						<a style="cursor: auto"> Interests </a>
+						<ul>
+							<li> <a href="anime.html"> Anime </a></li>
+							<li> <a href="guitars.html"> Guitars </a></li>
+							<li> <a href="music.html"> Music </a></li>
+							<li> <a href="gallery.html"> Photography</a></li>
+							<li> <a href = "football.html">Football</a></li>
+						</ul>
+						<li>
+							<a href="sub.html"> Contact </a>
+						</li>
+					</li>
+				</ul>
+			</div>
+					
+			<!-- Home Page -->
+					
+					
+			<div style="background-color:#ffffff; margin:0px; padding-top:10px" >
+				<!-- Image Slider -->
+				<h1>
+						What is this website ?
+				</h1>
+				<div class="slidercontainer">  
+					<img name="slide" style="max-width:800;height:400" />
+					<script>
+						//variable that will increment through the images
+						var step=0
+						function slideit()
+						{
+							//if browser does not support the image object, exit.
+							if (!document.images)
+								return
+							document.images.slide.src=eval("image"+step+".src")
+							if (step<4)
+								step++
+							else
+								step=0
+							//call function "slideit()" every 2.5 seconds
+							setTimeout("slideit()",2500)
+						}
+						slideit()
+					</script>
+				</div>
+
+					<!-- Text--> 
+				<div style="padding-bottom: 10px; margin-bottom:0px;">
+					<p class="p1">
+						This is My Blog.<br>
+						In this blog, I write about my favourite animes, music bands, guitars and shares photos I clicked and about Liverpool FC.
+						If you are looking for anime suggestion and reviews, this is a right place to look for. Also, you can learn about various bands
+						especially bands with genres like metal and its sub-genres, alternative, progressive rock, grunge etc. to name a few. And also 
+						some animes stories along with my favourite football team.
+					</p>
+					<p class="p1">
+						Stay tuned for more content as My Blog will be posting atleast one blog a week.
+						And, Subscribe if you want to follow content on topic like these.
+					</p>
+				</div>
+			</div>
+																	
+			<!-- Footer -->
+			<div class="footer-basic-centered">
+
+					<p class="footer-links">
+						<a href="anime.html">Anime</a>
+						·
+						<a href="music.html">Music</a>
+						·
+						<a href="guitars.html">Guitars</a>
+						·
+						<a href="gallery.html">Photography</a>
+						.
+						<a href="football.html">Football</a>
+						.
+						<a href="sub.html">Contact</a>
+					</p>
+					
+					<br>
+					<p class="footer-name">
+						<a class="footer-name" href="mailto:user@gmail.com">E-Mail me!</a><br>
+						Kathmandu, Nepal | PO-Box: 5454 <br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.5851121862943!2d85.34869476746606!3d27.70807733463711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e1!3m2!1sen!2snp!4v1660995921939!5m2!1sen!2snp" 
+						width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<br>
+						My Blog&copy; 2022
+					</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>My Blog</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript">
+      var image0 = new Image();
+      image0.src = "images/logo1.jpg";
+      var image1 = new Image();
+      image1.src = "images/liverpool1.jpeg";
+      var image2 = new Image();
+      image2.src = "images/liverpool2.jpg";
+      var image3 = new Image();
+      image3.src = "images/liverpool3.jfif";
+    </script>
+  </head>
+
+  <body class="background">
+    <div class="mainContent margin">
+      <!-- Header -->
+      <div>
+        <p class="header">My Blog</p>
+      </div>
+      <!-- Navigatioin Menu -->
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a style="cursor: auto; background-color: #000000"> Interests </a>
+            <ul>
+              <li><a href="anime.html"> Anime </a></li>
+              <li><a href="guitars.html"> Guitars </a></li>
+              <li><a href="music.html"> Music </a></li>
+              <li><a href="gallery.html"> Photography</a></li>
+              <li>
+                <a style="cursor: auto; background-color: #000000">Football</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="sub.html"> Contact </a>
+          </li>
+        </ul>
+      </div>
+      <!--Football start-->
+      <div style="background-color: rgb(255, 255, 255); padding: 10px">
+        <h1><u>Kopites</u></h1>
+        <h2>Liverpool:</h2>
+        <div class="liverpoolSlider">
+          <img name="slide" style="max-width: 1000; height: 450" alt="liverpool"/>
+          <script>
+            //variable that will increment through the images
+            var step = 0;
+            function slideit() {
+              //if browser does not support the image object, exit.
+              if (!document.images) return;
+              document.images.slide.src = eval("image" + step + ".src");
+              if (step < 3) step++;
+              else step = 0;
+              //call function "slideit()" every 2.5 seconds
+              setTimeout("slideit()", 2500);
+            }
+            slideit();
+          </script>
+        </div>
+        <div style="padding-bottom: 10px; margin-bottom: 0px">
+          <p class="p1">
+            Liverpool competes in the Premier League, the top tier of English
+            football. Founded in 1892, the club joined the Football League the
+            following year and has played its home games at Anfield since its
+            formation. Liverpool is one of the best supported clubs in the
+            world. The club states that its worldwide fan base includes more
+            than 200 officially recognised Supporters Clubs in at least 50
+            countries. The song "You'll Never Walk Alone", originally from the
+            Rodgers and Hammerstein musical Carousel and later recorded by
+            Liverpool musicians Gerry and the Pacemakers, is the club's anthem
+            and has been sung by the Anfield crowd since the early 1960s.
+          </p>
+          <p class="p1">
+            Since the arrival of Jurgen Klopp back in 2015, he has transformed
+            Liverpool to which was a sleeping giant to one of the best team in
+            the Europe and winning UEFA Champions League, UEFA Super Cup,
+            Premiere League title, FIFA club worldcup, FA cup, etc.
+          </p>
+          <br />
+          <h3>Stadium:</h3>
+          <p class="p1">
+            Anfield is the home ground of Liverpool. Having the capicity of
+            (>)53,394 and it is on the process of expanding its capacity.
+            Anfield is considered as one one of the most supportive and famous
+            stadium. The song "You'll Never Walk Alone", originally from the
+            Rodgers and Hammerstein musical Carousel and later recorded by
+            Liverpool musicians Gerry and the Pacemakers, is the club's anthem
+            and has been sung by the Anfield crowd since the early 1960s. It has
+            since gained popularity among fans of other clubs around the world.
+          </p>
+          <center>
+            <img
+              src="images/liverpoolgif.gif"
+              alt="Liverpool gif"
+              class="gif"
+            />
+          </center>
+          <br /><br />
+        </div>
+        <h3>Formation:</h3>
+        <p class="p1">
+          Liverpool mostly use 4-3-3 formation with two full-backs, two
+          center-backs, one defending midfielders, two center midfielders, and
+          three up front. When Jurgen Klopp arrived Liverpool back in 2015, he
+          experimented on different formation from 4-2-3-1 to 4-4-2. After
+          rotating the whole team and experimenting on different playing style,
+          he implemented gegenpressing in Liverpool's team.
+        </p>
+        <p class="p1">
+          And now, he is considered as one of the best coach in the world.
+        </p>
+        <table
+          class="center"
+          border="2"
+          cellspacing="0"
+          style="text-align: center; margin-right: auto"
+        >
+          <tr>
+            <th colspan="4">Trusted formation of Liverpool(4-3-3):</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">Alisson(GK)</td>
+          </tr>
+          <tr>
+            <td>Trent Alexander Arnold(RB)</td>
+            <td>Joel Matip(CB)</td>
+            <td>Virgil Vandijk(CB)</td>
+            <td>Robertoson(LB)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">Fabinho(DM)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Henderson(CM)&copy</td>
+            <td>Thiago(CM)</td>
+          </tr>
+          <tr>
+            <td>M.Salah(RW)</td>
+            <td colspan="2"></td>
+            <td>Diogo Jota(LW)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2">R.Frimino(CF/False 9)</td>
+          </tr>
+          <caption style="caption-side: bottom">
+            <u>Table: Liverpool's Formation</u>
+          </caption>
+        </table>
+        <h2>We are Liverpool, this means more!!<br />YNWA</h2>
+        <p>
+          <a
+            href="https://www.liverpoolfc.com/"
+            target="_blank"
+            class="more-link"
+            >Click here to visit official Liverpool site.</a
+          >
+        </p>
+      </div>
+
+      <div class="footer-basic-centered">
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="music.html">Music</a>
+          ·
+          <a href="anime.html">Anime</a>
+          ·
+          <a href="guitars.html">Guitars</a>
+          .
+          <a href="gallery.html">Photography</a>
+          .
+          <a href="sub.html">Contact</a>
+        </p>
+
+        <br />
+        <p class="footer-name">
+          <a class="footer-name" href="mailto:user@gmail.com">E-Mail me!</a
+          ><br />
+          Kathmandu, Nepal | PO-Box: 5454 <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.5851121862943!2d85.34869476746606!3d27.70807733463711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e1!3m2!1sen!2snp!4v1660995921939!5m2!1sen!2snp"
+            width="200"
+            height="100"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          My Blog&copy; 2022
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

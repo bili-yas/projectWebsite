@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title>My Blog</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" >
+		<script type="text/javascript">
+			function submitForm()
+			{
+				console.log("doc>>>>",document.forms)
+				document.form.submit();
+				var x = document.forms["form"]["email"].value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+		
+				if( document.form.name.value == "" ) 
+				{ 
+					alert( "Please provide your name!" ); 
+					document.form.name.focus(); 
+					return false; 
+				}
+				
+				if( document.form.email.value == "" ) 
+				{ 
+					alert( "Please provide your E-mail!" ); 
+					document.form.email.focus() ; 
+					return false; 
+				}
+			
+				//Check if @ is not at beginning
+				//if there is only one . (dot), it shouldn't be before @
+				//Check if . (dot) is not at the end  
+				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+				{
+					alert("Not a valid E-mail address");
+					return false;
+				}
+
+				if( document.form.phone.value == "" ) 
+				{ 
+					alert( "Please provide your Phone no!" ); 
+					document.form.phone.focus() ; 
+					return false; 
+				}
+			}
+
+			//\D means any non-digit
+			//event.key returns anything character you just typed
+			function allowOnlyNumbers(event) {
+				if (event.key.length === 1 && /\D/.test(event.key)) {
+					event.preventDefault();
+				}
+			}
+		</script>
+	</head>
+	<body class="background">
+		<div class="mainContent margin" >
+			<!-- Header -->
+			<div>
+				<p class="header">My Blog</p>
+			</div>
+			<!-- Navigatioin Menu -->
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="index.html"> Home </a>
+					</li>
+					<li>
+						<a> Interests </a>
+						<ul>
+							<li> <a href="anime.html"> Anime </a></li>
+							<li> <a href="guitars.html"> Guitars </a></li>
+							<li> <a href="music.html"> Music </a></li>
+							<li> <a href="gallery.html"> Photography</a></li>
+							<li> <a href = "football.html">Football</li>
+						</ul>
+					</li>
+					<li>
+						<a style="cursor: auto; background-color:#000000;">Contact</a>
+					</li>
+				<ul>
+			</div>
+					
+			<!--Form-->
+					
+			<div style="background-color:#384c6d; padding:10px; text-align:center; border: 1px solid #777; " >
+				<center>
+					<div style="border: 2px solid rgb(255, 255, 255); max-width:600px;">
+						<h1 style="margin-top:10px; " class="sub"> Contact Form</h1>
+						<form action name="form" >
+							<input size=30 type="text" name="name" class="form_style" placeholder="Name" onkeydown="allowOnlyString(event)"><br>
+							<input size=30 type="text" name="email" class="form_style" placeholder="Email"><br>
+							<input size=30 type="text" name="phone" class="form_style" placeholder="Phone No." onkeydown="allowOnlyNumbers(event)"><br>
+							
+							<a href="javascript:submitForm()" class="button">Contact</a>
+						</form>
+					</div>
+				</center>
+			</div>
+			
+			<!-- Footer -->
+			<div class="footer-basic-centered">
+					<p class="footer-links">
+						<a href="index.html">Home</a>
+						·
+						<a href="music.html">Music</a>
+						·
+						<a href="anime.html">Anime</a>
+						·
+						<a href="guitars.html">Guitars</a>
+						·
+						<a href="gallery.html">Photography</a>
+						.
+						<a href="football.html">Football</a>
+					</p>
+						
+					<br>
+					<p class="footer-name">
+						<a class="footer-name" href="mailto:user@gmail.com">E-Mail me!</a><br>
+						Kathmandu, Nepal | PO-Box: 5454 <br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.5851121862943!2d85.34869476746606!3d27.70807733463711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e1!3m2!1sen!2snp!4v1660995921939!5m2!1sen!2snp" 
+						width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+						My Blog&copy; 2022
+					</p>
+
+			</div>
+			
+		</div>
+	</body>
+</html>
+				

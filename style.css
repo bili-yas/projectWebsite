@@ -1,0 +1,216 @@
+.background{color:rgb(8, 8, 8);background-color:#d1D2D3}
+td{padding:5px; width:200px;}
+th{background-color:#4CAF50;}
+tr{background-color:#f2f2f2;}
+td:hover {background-color: #ddd;}
+a{text-decoration:none;}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	font-family:century; 
+	font-size: 3em; 
+	text-align:center;
+	letter-spacing:7px;
+	word-spacing:10px;
+	color:#C01C1C;
+	padding-top:20px;
+	
+	}
+
+h3{ text-align: left; font-size:1.4em; font-family: helvetica; color:#F66216;
+	max-width:1000px; margin: 10px auto;}
+p{
+	text-align:center; 
+	font-size:1.5em;
+	margin:0px auto;}
+.p1{ 
+	text-align: left;
+	font-size:1.3em;
+	font-family:bookman;
+	max-width:1000px;
+	margin: 10px auto;}
+		
+h2{
+	text-align: center; font-size:2em; font-family:impact;}
+.mainContent{ margin:auto; max-width: 1400px}
+.margin{margin-top:20px; margin-bottom: 20px}
+img{max-width: 1000px; margin-top:30px; margin-bottom:30px; width:100%;}
+
+.gif{margin-top:30px; margin-bottom:30px; width:50%}
+
+.header {
+	font-family: metal;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 5em;
+    height:130px;
+    background:#292c2f;
+    margin: auto;
+	color:#DEDEE2;
+}
+/*Navigaiton menu*/
+.menu ul{
+	list-style: none;
+	background-color: #4979a0;
+	text-align: center;
+	padding: 0; 
+	margin: 0;
+}
+@font-face{font-family: metal; src:url(metal_lord.woff);}
+@font-face{font-family: orange; src:url(orange.woff);}
+@font-face{font-family: run; src:url(run.woff);}
+@font-face{font-family: another_danger; src:url(another_danger.woff);}
+.menu li{
+	width: 120px;
+	font-family: orange;
+	font-size: 2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: none;
+	display: inline-block;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+.menu a{
+	text-decoration: none;
+	color:#DEDEE2;
+}
+
+.menu a:hover{
+	background-color:#77A7D6;
+	transition: s background-color;
+}
+
+.menu li ul{
+	position: absolute;
+	z-index:1;
+	display:none; 
+	font-size:.4em; 
+	padding-right:140px;}
+.menu li:hover ul{display: block; width: 70px; opacity:80%;}
+.menu li ul li{display: block;}
+.menu ul li{ text-align: center;}
+
+/* For Image slider */
+ 
+.slidercontainer {  
+	max-width: 800px;  
+	position: relative;
+	margin: auto;	  
+} 
+/*Slider for liverpool.html*/ 
+.liverpoolSlider{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.liverpoolSlider img {
+	object-fit: cover;
+}
+
+/*Footer*/
+
+.footer-basic-centered{
+	background-color: #292c2f;
+	max-width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+	padding: 30px;
+}
+
+ .footer-basic-centered .footer-name{
+	color:  #ffffff;
+	font-size: 16px;
+	margin: 0;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 0px;
+	font-size: 1em;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+/*Photo Gallery*/
+
+figure{ width: 200px;
+		margin:8px 0;
+		border: 1px solid #777;
+		padding: 8px;
+		box-sizing:border-box;
+		background-color: #fff;
+		}
+		/* box-sizing:border-box;__we don’t want the padding to increase the size of the figure elements, 
+		instead we want its contents to shrink to make space for the padding.*/
+figure img{width: 100%}
+figure figcaption{text-align:center; padding: 8px 4px;}
+
+.gallery{
+	display:flex; 
+	max-width:900px; 
+	margin:auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: #dedede;
+	}
+	/*Form Subscription*/
+.sub{
+	margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 2.8em;
+color: #ffffff;}
+
+.form_style{
+	background-color:#ffffff;
+	border-bottom-width: 1.2px; 
+	border-bottom-style: solid; 
+	border-bottom-color: #ffffff; 
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	padding:10px;
+	max-width:600px;
+	font-size: 1.2em;
+	font-weight: 100;
+	margin-top:5px;
+	
+}
+
+input:focus {
+  outline: none;
+}
+
+a.button{
+	max-width:80px;
+	position:relative;
+	font-size:20px;
+	margin-top:50px;
+	padding:10px;
+	display:block;
+	background-color:white}
+
+.button:hover {
+	background-color: #2F6DCF
+ 
+}
+
+.more-link:hover{
+	color: red;
+}
